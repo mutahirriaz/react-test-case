@@ -7,4 +7,11 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/hello mutahir/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+
 
